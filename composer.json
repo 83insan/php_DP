@@ -1,0 +1,29 @@
+{
+    "name": "maxpou/php-DP",
+    "description": "Some Design Pattern implemented in PHP",
+    "authors": [
+        {
+            "name": "Insan Wijaya",
+            "email": "insan.career@gmail.com"
+        }
+    ],
+    "require": {
+        "symfony/var-dumper": "^3.1",
+        "phpunit/phpunit": "^5.4"
+    },
+    "autoload": {
+        "psr-4": {
+            "State\\":      ["DP/State/Example/src",      "DP/State/Example/tests"],
+            "DTO\\":        ["DP/DTO/Example/src",        "DP/DTO/Example/tests"],
+            "Strategy\\":   ["DP/Strategy/Example/src",   "DP/Strategy/Example/tests"],
+            "Observer\\":   ["DP/Observer/Example/src",   "DP/Observer/Example/tests"],
+            "NullObject\\": ["DP/NullObject/Example/src", "DP/NullObject/Example/tests"]
+        }
+    },
+    "scripts": {
+        "test": ".\\vendor\\bin\\phpunit",
+        "test-dox": ".\\vendor\\bin\\phpunit --testdox",
+        "test-coverage": ".\\vendor\\bin\\phpunit --coverage-text",
+        "test-coverage-html": ".\\vendor\\bin\\phpunit --coverage-html=./reports/phpunit"
+    }
+}
