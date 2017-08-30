@@ -1,9 +1,11 @@
 "# php_DP" 
 -----------
-Installation
+## Using
 
-1. git clone 
-2. composer install
+**Installation**
+
+1. `git clone https://github.com/83insan/php_DP`
+2. `composer install`
 3. Test with:
-   a. composer test: classic PHPUnit
-   b. composer test-dox: test & report with TestDox format
+    * `composer test`: classic PHPUnit
+    * `composer test-dox`: test & report with TestDox format
